@@ -1,0 +1,762 @@
+Received Kmeans request on data from client
+Initial centroids: {1: [-182.888, -215.52], 2: [-16.6883, 8.15226], 3: [0.99414, -9.90249]}
+Invoked Mappers
+mapper 1  to data (0, 10)
+Sent request to the mapper at 50010
+Sending request to mapper 1
+mapper 2  to data (11, 21)
+Sent request to the mapper at 50011
+Created channel for the mapper 1
+Sending request to mapper 2
+mapper 3  to data (22, 29)
+Created channel for the mapper 2
+Sent request to the mapper at 50012
+Sending request to mapper 3
+Created channel for the mapper 3
+Mapper 1 working..
+Mapper 2 working..
+Mapper 3 working..
+{1: [-182.888, -215.52], 2: [-16.6883, 8.15226], 3: [0.99414, -9.90249]}
+{1: [-182.888, -215.52], 2: [-16.6883, 8.15226], 3: [0.99414, -9.90249]}
+Received indices 0 to 10 and centroids {1: [-182.888, -215.52], 2: [-16.6883, 8.15226], 3: [0.99414, -9.90249]} at mapper_id 1
+Received indices 11 to 21 and centroids {1: [-182.888, -215.52], 2: [-16.6883, 8.15226], 3: [0.99414, -9.90249]} at mapper_id 2
+{1: [-182.888, -215.52], 2: [-16.6883, 8.15226], 3: [0.99414, -9.90249]}
+Received indices 22 to 29 and centroids {1: [-182.888, -215.52], 2: [-16.6883, 8.15226], 3: [0.99414, -9.90249]} at mapper_id 3
+True from mapper_id 1
+True from mapper_id 3
+True from mapper_id 2
+Reducer 1 running..
+Reducer 2 running..
+Reducer 3 running..
+Deleted existing reducer file: reducer_1.txt
+Deleted existing reducer file: reducer_2.txt
+Reducer 1: centriod id - 1 Updated centroid - [-191.875, -201.5]
+Reducer 3: centriod id - 3 Updated centroid - [91.45454545454545, 86.9090909090909]
+Reducer 2: centriod id - 2 Updated centroid - [107.0, 132.375]
+Iteration 0
+Checking Convergence..
+Invoked Mappers
+mapper 1  to data (0, 10)
+Sent request to the mapper at 50010
+Sending request to mapper 1
+mapper 2  to data (11, 21)
+Created channel for the mapper 1
+Sent request to the mapper at 50011
+Sending request to mapper 2
+mapper 3  to data (22, 29)
+Created channel for the mapper 2
+Sent request to the mapper at 50012
+Sending request to mapper 3
+Created channel for the mapper 3
+Mapper 1 working..
+{1: [-191.875, -201.5], 2: [107.0, 132.375], 3: [91.45454545454545, 86.9090909090909]}
+Mapper 3 working..
+Mapper 2 working..
+Received indices 0 to 10 and centroids {1: [-191.875, -201.5], 2: [107.0, 132.375], 3: [91.45454545454545, 86.9090909090909]} at mapper_id 1
+{1: [-191.875, -201.5], 2: [107.0, 132.375], 3: [91.45454545454545, 86.9090909090909]}
+Received indices 22 to 29 and centroids {1: [-191.875, -201.5], 2: [107.0, 132.375], 3: [91.45454545454545, 86.9090909090909]} at mapper_id 3
+{1: [-191.875, -201.5], 2: [107.0, 132.375], 3: [91.45454545454545, 86.9090909090909]}
+True from mapper_id 1
+Received indices 11 to 21 and centroids {1: [-191.875, -201.5], 2: [107.0, 132.375], 3: [91.45454545454545, 86.9090909090909]} at mapper_id 2
+True from mapper_id 3
+True from mapper_id 2
+Reducer 2 running..
+Reducer 1 running..
+Reducer 3 running..
+Deleted existing reducer file: reducer_3.txt
+Deleted existing reducer file: reducer_1.txt
+Deleted existing reducer file: reducer_2.txt
+Reducer 1: centriod id - 1 Updated centroid - [-191.875, -201.5]
+Reducer 3: centriod id - 3 Updated centroid - [-7.0, -1.1111111111111112]
+Reducer 2: centriod id - 2 Updated centroid - [192.5, 202.5]
+Iteration 1
+Checking Convergence..
+Invoked Mappers
+mapper 1  to data (0, 10)
+Sent request to the mapper at 50010
+Sending request to mapper 1
+mapper 2  to data (11, 21)
+Created channel for the mapper 1
+Sent request to the mapper at 50011
+Sending request to mapper 2
+mapper 3  to data (22, 29)
+Created channel for the mapper 2
+Sent request to the mapper at 50012
+Sending request to mapper 3
+Created channel for the mapper 3
+Mapper 1 working..
+Mapper 2 working..
+Mapper 3 working..
+{1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]}
+Received indices 0 to 10 and centroids {1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]} at mapper_id 1
+{1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]}
+{1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]}
+Received indices 11 to 21 and centroids {1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]} at mapper_id 2
+Received indices 22 to 29 and centroids {1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]} at mapper_id 3
+True from mapper_id 1
+True from mapper_id 2
+True from mapper_id 3
+Reducer 1 running..
+Reducer 2 running..
+Deleted existing reducer file: reducer_1.txt
+Reducer 3 running..
+Deleted existing reducer file: reducer_2.txt
+Deleted existing reducer file: reducer_3.txt
+Reducer 1: centriod id - 1 Updated centroid - [-191.875, -201.5]
+Reducer 3: centriod id - 3 Updated centroid - [-7.0, -1.1111111111111112]
+Reducer 2: centriod id - 2 Updated centroid - [192.5, 202.5]
+Iteration 2
+Checking Convergence..
+Invoked Mappers
+mapper 1  to data (0, 10)
+Sent request to the mapper at 50010
+Sending request to mapper 1
+mapper 2  to data (11, 21)
+Created channel for the mapper 1
+Sent request to the mapper at 50011
+Sending request to mapper 2
+mapper 3  to data (22, 29)
+Sent request to the mapper at 50012
+Created channel for the mapper 2
+Sending request to mapper 3
+Created channel for the mapper 3
+Mapper 1 working..
+{1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]}
+Received indices 0 to 10 and centroids {1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]} at mapper_id 1
+Mapper 2 working..
+Mapper 3 working..
+True from mapper_id 1
+{1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]}
+{1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]}
+Received indices 11 to 21 and centroids {1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]} at mapper_id 2
+Received indices 22 to 29 and centroids {1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]} at mapper_id 3
+True from mapper_id 3
+True from mapper_id 2
+Reducer 1 running..
+Reducer 2 running..
+Deleted existing reducer file: reducer_1.txt
+Reducer 3 running..
+Deleted existing reducer file: reducer_2.txt
+Deleted existing reducer file: reducer_3.txt
+Reducer 2: centriod id - 2 Updated centroid - [192.5, 202.5]
+Reducer 3: centriod id - 3 Updated centroid - [-7.0, -1.1111111111111112]
+Reducer 1: centriod id - 1 Updated centroid - [-191.875, -201.5]
+Iteration 3
+Checking Convergence..
+Invoked Mappers
+mapper 1  to data (0, 10)
+Sent request to the mapper at 50010
+Sending request to mapper 1
+mapper 2  to data (11, 21)
+Created channel for the mapper 1
+Sent request to the mapper at 50011
+mapper 3  to data (22, 29)
+Sending request to mapper 2
+Sent request to the mapper at 50012
+Created channel for the mapper 2
+Sending request to mapper 3
+Mapper 1 working..
+Created channel for the mapper 3
+{1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]}
+Received indices 0 to 10 and centroids {1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]} at mapper_id 1
+Mapper 2 working..
+Mapper 3 working..
+True from mapper_id 1
+{1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]}
+Received indices 11 to 21 and centroids {1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]} at mapper_id 2
+{1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]}
+Received indices 22 to 29 and centroids {1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]} at mapper_id 3
+True from mapper_id 2
+True from mapper_id 3
+Reducer 1 running..
+Reducer 2 running..
+Reducer 3 running..
+Deleted existing reducer file: reducer_1.txt
+Deleted existing reducer file: reducer_2.txt
+Deleted existing reducer file: reducer_3.txt
+Reducer 1: centriod id - 1 Updated centroid - [-191.875, -201.5]
+Reducer 3: centriod id - 3 Updated centroid - [-7.0, -1.1111111111111112]
+Reducer 2: centriod id - 2 Updated centroid - [192.5, 202.5]
+Iteration 4
+Checking Convergence..
+Invoked Mappers
+mapper 1  to data (0, 10)
+Sent request to the mapper at 50010
+Sending request to mapper 1
+Created channel for the mapper 1
+mapper 2  to data (11, 21)
+Sent request to the mapper at 50011
+Sending request to mapper 2
+mapper 3  to data (22, 29)
+Sent request to the mapper at 50012
+Created channel for the mapper 2
+Sending request to mapper 3
+Created channel for the mapper 3
+Mapper 1 working..
+Mapper 2 working..
+{1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]}
+Received indices 0 to 10 and centroids {1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]} at mapper_id 1
+Mapper 3 working..
+{1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]}
+Received indices 11 to 21 and centroids {1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]} at mapper_id 2
+True from mapper_id 1
+{1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]}
+Received indices 22 to 29 and centroids {1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]} at mapper_id 3
+True from mapper_id 2
+True from mapper_id 3
+Reducer 3 running..
+Reducer 2 running..
+Deleted existing reducer file: reducer_3.txt
+Reducer 1 running..
+Deleted existing reducer file: reducer_2.txt
+Deleted existing reducer file: reducer_1.txt
+Reducer 3: centriod id - 3 Updated centroid - [-7.0, -1.1111111111111112]
+Reducer 2: centriod id - 2 Updated centroid - [192.5, 202.5]
+Reducer 1: centriod id - 1 Updated centroid - [-191.875, -201.5]
+Iteration 5
+Checking Convergence..
+Invoked Mappers
+mapper 1  to data (0, 10)
+Sent request to the mapper at 50010
+Sending request to mapper 1
+mapper 2  to data (11, 21)
+Created channel for the mapper 1
+Sent request to the mapper at 50011
+mapper 3  to data (22, 29)
+Sent request to the mapper at 50012
+Sending request to mapper 2
+Created channel for the mapper 2
+Sending request to mapper 3
+Created channel for the mapper 3
+Mapper 1 working..
+{1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]}
+Received indices 0 to 10 and centroids {1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]} at mapper_id 1
+Mapper 3 working..
+Mapper 2 working..
+{1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]}
+True from mapper_id 1
+Received indices 22 to 29 and centroids {1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]} at mapper_id 3
+{1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]}
+Received indices 11 to 21 and centroids {1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]} at mapper_id 2
+True from mapper_id 3
+True from mapper_id 2
+Reducer 1 running..
+Reducer 2 running..
+Reducer 3 running..
+Deleted existing reducer file: reducer_1.txt
+Deleted existing reducer file: reducer_2.txt
+Deleted existing reducer file: reducer_3.txt
+Reducer 1: centriod id - 1 Updated centroid - [-191.875, -201.5]
+Reducer 2: centriod id - 2 Updated centroid - [192.5, 202.5]
+Reducer 3: centriod id - 3 Updated centroid - [-7.0, -1.1111111111111112]
+Iteration 6
+Checking Convergence..
+Invoked Mappers
+mapper 1  to data (0, 10)
+Sent request to the mapper at 50010
+Sending request to mapper 1
+mapper 2  to data (11, 21)
+Created channel for the mapper 1
+Sent request to the mapper at 50011
+Sending request to mapper 2
+mapper 3  to data (22, 29)
+Created channel for the mapper 2
+Sent request to the mapper at 50012
+Sending request to mapper 3
+Created channel for the mapper 3
+Mapper 1 working..
+Mapper 2 working..
+Mapper 3 working..
+{1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]}
+Received indices 0 to 10 and centroids {1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]} at mapper_id 1
+{1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]}
+Received indices 11 to 21 and centroids {1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]} at mapper_id 2
+{1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]}
+Received indices 22 to 29 and centroids {1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]} at mapper_id 3
+True from mapper_id 1
+True from mapper_id 3
+True from mapper_id 2
+Reducer 1 running..
+Reducer 2 running..
+Deleted existing reducer file: reducer_2.txt
+Reducer 3 running..
+Deleted existing reducer file: reducer_3.txt
+Deleted existing reducer file: reducer_1.txt
+Reducer 2: centriod id - 2 Updated centroid - [192.5, 202.5]
+Reducer 1: centriod id - 1 Updated centroid - [-191.875, -201.5]
+Reducer 3: centriod id - 3 Updated centroid - [-7.0, -1.1111111111111112]
+Iteration 7
+Checking Convergence..
+Invoked Mappers
+mapper 1  to data (0, 10)
+Sent request to the mapper at 50010
+Sending request to mapper 1
+mapper 2  to data (11, 21)
+Created channel for the mapper 1
+Sent request to the mapper at 50011
+Sending request to mapper 2
+mapper 3  to data (22, 29)
+Created channel for the mapper 2
+Sent request to the mapper at 50012
+Sending request to mapper 3
+Created channel for the mapper 3
+Mapper 1 working..
+Mapper 2 working..
+{1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]}
+{1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]}
+Mapper 3 working..
+Received indices 11 to 21 and centroids {1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]} at mapper_id 2
+Received indices 0 to 10 and centroids {1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]} at mapper_id 1
+{1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]}
+Received indices 22 to 29 and centroids {1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]} at mapper_id 3
+True from mapper_id 2
+True from mapper_id 1
+True from mapper_id 3
+Reducer 1 running..
+Reducer 2 running..
+Reducer 3 running..
+Deleted existing reducer file: reducer_2.txt
+Deleted existing reducer file: reducer_1.txt
+Deleted existing reducer file: reducer_3.txt
+Reducer 2: centriod id - 2 Updated centroid - [192.5, 202.5]
+Reducer 3: centriod id - 3 Updated centroid - [-7.0, -1.1111111111111112]
+Reducer 1: centriod id - 1 Updated centroid - [-191.875, -201.5]
+Iteration 8
+Checking Convergence..
+Invoked Mappers
+mapper 1  to data (0, 10)
+Sent request to the mapper at 50010
+Sending request to mapper 1
+mapper 2  to data (11, 21)
+Created channel for the mapper 1
+Sent request to the mapper at 50011
+Sending request to mapper 2
+mapper 3  to data (22, 29)
+Created channel for the mapper 2
+Sent request to the mapper at 50012
+Sending request to mapper 3
+Created channel for the mapper 3
+Mapper 1 working..
+{1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]}
+Mapper 2 working..
+Received indices 0 to 10 and centroids {1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]} at mapper_id 1
+Mapper 3 working..
+{1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]}
+Received indices 11 to 21 and centroids {1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]} at mapper_id 2
+True from mapper_id 1
+{1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]}
+Received indices 22 to 29 and centroids {1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]} at mapper_id 3
+True from mapper_id 2
+True from mapper_id 3
+Reducer 1 running..
+Reducer 2 running..
+Deleted existing reducer file: reducer_1.txt
+Deleted existing reducer file: reducer_2.txt
+Reducer 3 running..
+Deleted existing reducer file: reducer_3.txt
+Reducer 1: centriod id - 1 Updated centroid - [-191.875, -201.5]
+Reducer 2: centriod id - 2 Updated centroid - [192.5, 202.5]
+Reducer 3: centriod id - 3 Updated centroid - [-7.0, -1.1111111111111112]
+Iteration 9
+Checking Convergence..
+Invoked Mappers
+mapper 1  to data (0, 10)
+Sent request to the mapper at 50010
+Sending request to mapper 1
+mapper 2  to data (11, 21)
+Created channel for the mapper 1
+Sent request to the mapper at 50011
+Sending request to mapper 2
+Created channel for the mapper 2
+mapper 3  to data (22, 29)
+Sent request to the mapper at 50012
+Sending request to mapper 3
+Created channel for the mapper 3
+Mapper 1 working..
+Mapper 2 working..
+Mapper 3 working..
+{1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]}
+{1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]}
+Received indices 0 to 10 and centroids {1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]} at mapper_id 1
+Received indices 11 to 21 and centroids {1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]} at mapper_id 2
+{1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]}
+Received indices 22 to 29 and centroids {1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]} at mapper_id 3
+True from mapper_id 1
+True from mapper_id 2
+True from mapper_id 3
+Reducer 1 running..
+Reducer 2 running..
+Reducer 3 running..
+Deleted existing reducer file: reducer_1.txt
+Deleted existing reducer file: reducer_2.txt
+Deleted existing reducer file: reducer_3.txt
+Reducer 1: centriod id - 1 Updated centroid - [-191.875, -201.5]
+Reducer 2: centriod id - 2 Updated centroid - [192.5, 202.5]
+Reducer 3: centriod id - 3 Updated centroid - [-7.0, -1.1111111111111112]
+Iteration 10
+Checking Convergence..
+Invoked Mappers
+mapper 1  to data (0, 10)
+Sent request to the mapper at 50010
+Sending request to mapper 1
+mapper 2  to data (11, 21)
+Created channel for the mapper 1
+Sent request to the mapper at 50011
+Sending request to mapper 2
+mapper 3  to data (22, 29)
+Created channel for the mapper 2
+Sent request to the mapper at 50012
+Sending request to mapper 3
+Created channel for the mapper 3
+Mapper 1 working..
+Mapper 2 working..
+{1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]}
+Mapper 3 working..
+Received indices 0 to 10 and centroids {1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]} at mapper_id 1
+{1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]}
+Received indices 11 to 21 and centroids {1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]} at mapper_id 2
+True from mapper_id 1
+{1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]}
+Received indices 22 to 29 and centroids {1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]} at mapper_id 3
+True from mapper_id 2
+True from mapper_id 3
+Reducer 1 running..
+Reducer 2 running..
+Reducer 3 running..
+Deleted existing reducer file: reducer_3.txt
+Deleted existing reducer file: reducer_1.txt
+Deleted existing reducer file: reducer_2.txt
+Reducer 3: centriod id - 3 Updated centroid - [-7.0, -1.1111111111111112]
+Reducer 1: centriod id - 1 Updated centroid - [-191.875, -201.5]
+Reducer 2: centriod id - 2 Updated centroid - [192.5, 202.5]
+Iteration 11
+Checking Convergence..
+Invoked Mappers
+mapper 1  to data (0, 10)
+Sent request to the mapper at 50010
+Sending request to mapper 1
+mapper 2  to data (11, 21)
+Created channel for the mapper 1
+Sent request to the mapper at 50011
+Sending request to mapper 2
+mapper 3  to data (22, 29)
+Created channel for the mapper 2
+Sent request to the mapper at 50012
+Sending request to mapper 3
+Created channel for the mapper 3
+Mapper 1 working..
+Mapper 2 working..
+Mapper 3 working..
+{1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]}
+Received indices 0 to 10 and centroids {1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]} at mapper_id 1
+{1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]}
+{1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]}
+Received indices 11 to 21 and centroids {1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]} at mapper_id 2
+Received indices 22 to 29 and centroids {1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]} at mapper_id 3
+True from mapper_id 1
+True from mapper_id 3
+True from mapper_id 2
+Reducer 1 running..
+Reducer 2 running..
+Reducer 3 running..
+Deleted existing reducer file: reducer_1.txt
+Deleted existing reducer file: reducer_2.txt
+Deleted existing reducer file: reducer_3.txt
+Reducer 1: centriod id - 1 Updated centroid - [-191.875, -201.5]
+Reducer 2: centriod id - 2 Updated centroid - [192.5, 202.5]
+Reducer 3: centriod id - 3 Updated centroid - [-7.0, -1.1111111111111112]
+Iteration 12
+Checking Convergence..
+Invoked Mappers
+mapper 1  to data (0, 10)
+Sent request to the mapper at 50010
+Sending request to mapper 1
+mapper 2  to data (11, 21)
+Created channel for the mapper 1
+Sent request to the mapper at 50011
+Sending request to mapper 2
+mapper 3  to data (22, 29)
+Sent request to the mapper at 50012
+Sending request to mapper 3
+Created channel for the mapper 3
+Created channel for the mapper 2
+Mapper 1 working..
+{1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]}
+Mapper 3 working..
+Received indices 0 to 10 and centroids {1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]} at mapper_id 1
+Mapper 2 working..
+{1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]}
+Received indices 22 to 29 and centroids {1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]} at mapper_id 3
+{1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]}
+Received indices 11 to 21 and centroids {1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]} at mapper_id 2
+True from mapper_id 1
+True from mapper_id 3
+True from mapper_id 2
+Reducer 1 running..
+Reducer 2 running..
+Deleted existing reducer file: reducer_1.txt
+Deleted existing reducer file: reducer_2.txt
+Reducer 3 running..
+Deleted existing reducer file: reducer_3.txt
+Reducer 1: centriod id - 1 Updated centroid - [-191.875, -201.5]
+Reducer 2: centriod id - 2 Updated centroid - [192.5, 202.5]
+Reducer 3: centriod id - 3 Updated centroid - [-7.0, -1.1111111111111112]
+Iteration 13
+Checking Convergence..
+Invoked Mappers
+mapper 1  to data (0, 10)
+Sent request to the mapper at 50010
+Sending request to mapper 1
+mapper 2  to data (11, 21)
+Created channel for the mapper 1
+Sent request to the mapper at 50011
+Sending request to mapper 2
+mapper 3  to data (22, 29)
+Created channel for the mapper 2
+Sent request to the mapper at 50012
+Sending request to mapper 3
+Created channel for the mapper 3
+Mapper 1 working..
+{1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]}
+Received indices 0 to 10 and centroids {1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]} at mapper_id 1
+Mapper 2 working..
+Mapper 3 working..
+{1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]}
+Received indices 22 to 29 and centroids {1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]} at mapper_id 3
+True from mapper_id 1
+{1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]}
+Received indices 11 to 21 and centroids {1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]} at mapper_id 2
+True from mapper_id 3
+True from mapper_id 2
+Reducer 1 running..
+Reducer 2 running..
+Deleted existing reducer file: reducer_1.txt
+Deleted existing reducer file: reducer_2.txt
+Reducer 3 running..
+Deleted existing reducer file: reducer_3.txt
+Reducer 1: centriod id - 1 Updated centroid - [-191.875, -201.5]
+Reducer 2: centriod id - 2 Updated centroid - [192.5, 202.5]
+Reducer 3: centriod id - 3 Updated centroid - [-7.0, -1.1111111111111112]
+Iteration 14
+Checking Convergence..
+Invoked Mappers
+mapper 1  to data (0, 10)
+Sent request to the mapper at 50010
+Sending request to mapper 1
+mapper 2  to data (11, 21)
+Created channel for the mapper 1
+Sent request to the mapper at 50011
+Sending request to mapper 2
+mapper 3  to data (22, 29)
+Created channel for the mapper 2
+Sent request to the mapper at 50012
+Sending request to mapper 3
+Created channel for the mapper 3
+Mapper 1 working..
+{1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]}
+Mapper 2 working..
+Received indices 0 to 10 and centroids {1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]} at mapper_id 1
+Mapper 3 working..
+{1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]}
+True from mapper_id 1
+Received indices 11 to 21 and centroids {1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]} at mapper_id 2
+{1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]}
+Received indices 22 to 29 and centroids {1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]} at mapper_id 3
+True from mapper_id 2
+True from mapper_id 3
+Reducer 1 running..
+Reducer 2 running..
+Deleted existing reducer file: reducer_1.txt
+Deleted existing reducer file: reducer_2.txt
+Reducer 3 running..
+Deleted existing reducer file: reducer_3.txt
+Reducer 2: centriod id - 2 Updated centroid - [192.5, 202.5]
+Reducer 1: centriod id - 1 Updated centroid - [-191.875, -201.5]
+Reducer 3: centriod id - 3 Updated centroid - [-7.0, -1.1111111111111112]
+Iteration 15
+Checking Convergence..
+Invoked Mappers
+mapper 1  to data (0, 10)
+Sent request to the mapper at 50010
+mapper 2  to data (11, 21)
+Sending request to mapper 1
+Sent request to the mapper at 50011
+Created channel for the mapper 1
+mapper 3  to data (22, 29)
+Sending request to mapper 2
+Created channel for the mapper 2
+Sent request to the mapper at 50012
+Sending request to mapper 3
+Created channel for the mapper 3
+Mapper 1 working..
+Mapper 2 working..
+Mapper 3 working..
+{1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]}
+{1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]}
+Received indices 0 to 10 and centroids {1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]} at mapper_id 1
+Received indices 11 to 21 and centroids {1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]} at mapper_id 2
+{1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]}
+Received indices 22 to 29 and centroids {1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]} at mapper_id 3
+True from mapper_id 1
+True from mapper_id 2
+True from mapper_id 3
+Reducer 1 running..
+Reducer 3 running..
+Reducer 2 running..
+Deleted existing reducer file: reducer_2.txt
+Deleted existing reducer file: reducer_3.txt
+Deleted existing reducer file: reducer_1.txt
+Reducer 2: centriod id - 2 Updated centroid - [192.5, 202.5]
+Reducer 3: centriod id - 3 Updated centroid - [-7.0, -1.1111111111111112]
+Reducer 1: centriod id - 1 Updated centroid - [-191.875, -201.5]
+Iteration 16
+Checking Convergence..
+Invoked Mappers
+mapper 1  to data (0, 10)
+Sent request to the mapper at 50010
+Sending request to mapper 1
+mapper 2  to data (11, 21)
+Created channel for the mapper 1
+Sent request to the mapper at 50011
+Sending request to mapper 2
+mapper 3  to data (22, 29)
+Created channel for the mapper 2
+Sent request to the mapper at 50012
+Sending request to mapper 3
+Created channel for the mapper 3
+Mapper 1 working..
+Mapper 2 working..
+{1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]}
+Received indices 0 to 10 and centroids {1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]} at mapper_id 1
+Mapper 3 working..
+{1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]}
+Received indices 11 to 21 and centroids {1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]} at mapper_id 2
+True from mapper_id 1
+{1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]}
+Received indices 22 to 29 and centroids {1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]} at mapper_id 3
+True from mapper_id 2
+True from mapper_id 3
+Reducer 1 running..
+Reducer 2 running..
+Reducer 3 running..
+Deleted existing reducer file: reducer_1.txt
+Deleted existing reducer file: reducer_2.txt
+Deleted existing reducer file: reducer_3.txt
+Reducer 1: centriod id - 1 Updated centroid - [-191.875, -201.5]
+Reducer 2: centriod id - 2 Updated centroid - [192.5, 202.5]
+Reducer 3: centriod id - 3 Updated centroid - [-7.0, -1.1111111111111112]
+Iteration 17
+Checking Convergence..
+Invoked Mappers
+mapper 1  to data (0, 10)
+Sent request to the mapper at 50010
+Sending request to mapper 1
+mapper 2  to data (11, 21)
+Created channel for the mapper 1
+Sent request to the mapper at 50011
+Sending request to mapper 2
+mapper 3  to data (22, 29)
+Created channel for the mapper 2
+Sent request to the mapper at 50012
+Sending request to mapper 3
+Created channel for the mapper 3
+Mapper 1 working..
+Mapper 2 working..
+Mapper 3 working..
+{1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]}
+Received indices 0 to 10 and centroids {1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]} at mapper_id 1
+{1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]}
+Received indices 11 to 21 and centroids {1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]} at mapper_id 2
+{1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]}
+Received indices 22 to 29 and centroids {1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]} at mapper_id 3
+True from mapper_id 1
+True from mapper_id 3
+True from mapper_id 2
+Reducer 1 running..
+Deleted existing reducer file: reducer_1.txt
+Reducer 1: centriod id - 1 Updated centroid - [-191.875, -201.5]
+Reducer 3 running..
+Reducer 2 running..
+Deleted existing reducer file: reducer_2.txt
+Reducer 2: centriod id - 2 Updated centroid - [192.5, 202.5]
+Deleted existing reducer file: reducer_3.txt
+Reducer 3: centriod id - 3 Updated centroid - [-7.0, -1.1111111111111112]
+Iteration 18
+Checking Convergence..
+Invoked Mappers
+mapper 1  to data (0, 10)
+Sent request to the mapper at 50010
+Sending request to mapper 1
+mapper 2  to data (11, 21)
+Created channel for the mapper 1
+Sent request to the mapper at 50011
+Sending request to mapper 2
+Created channel for the mapper 2
+mapper 3  to data (22, 29)
+Sent request to the mapper at 50012
+Sending request to mapper 3
+Created channel for the mapper 3
+Mapper 1 working..
+Mapper 2 working..
+{1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]}
+Received indices 0 to 10 and centroids {1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]} at mapper_id 1
+Mapper 3 working..
+{1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]}
+Received indices 11 to 21 and centroids {1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]} at mapper_id 2
+True from mapper_id 2
+{1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]}
+Received indices 22 to 29 and centroids {1: [-191.875, -201.5], 2: [192.5, 202.5], 3: [-7.0, -1.1111111111111112]} at mapper_id 3
+True from mapper_id 1
+True from mapper_id 3
+Reducer 1 running..
+Reducer 2 running..
+Deleted existing reducer file: reducer_2.txt
+Deleted existing reducer file: reducer_1.txt
+Reducer 1: centriod id - 1 Updated centroid - [-191.875, -201.5]
+Reducer 3 running..
+Deleted existing reducer file: reducer_3.txt
+Reducer 3: centriod id - 3 Updated centroid - [-7.0, -1.1111111111111112]
+Reducer 2: centriod id - 2 Updated centroid - [192.5, 202.5]
+Iteration 19
+Checking Convergence..
+Maximum iterations (20) reached. Exiting.
+All reducers completed successfully.
+All mappers completed successfully.
+All reducers completed successfully.
+All mappers completed successfully.
+All reducers completed successfully.
+All mappers completed successfully.
+All reducers completed successfully.
+All mappers completed successfully.
+All reducers completed successfully.
+All mappers completed successfully.
+All reducers completed successfully.
+All mappers completed successfully.
+All reducers completed successfully.
+All mappers completed successfully.
+All reducers completed successfully.
+All mappers completed successfully.
+All reducers completed successfully.
+All mappers completed successfully.
+All reducers completed successfully.
+All mappers completed successfully.
+All reducers completed successfully.
+All mappers completed successfully.
+All reducers completed successfully.
+All mappers completed successfully.
+All reducers completed successfully.
+All mappers completed successfully.
+All reducers completed successfully.
+All mappers completed successfully.
+All reducers completed successfully.
+All mappers completed successfully.
+All reducers completed successfully.
+All mappers completed successfully.
+All reducers completed successfully.
+All mappers completed successfully.
+All reducers completed successfully.
+All mappers completed successfully.
+All reducers completed successfully.
+All mappers completed successfully.
+All reducers completed successfully.
+All mappers completed successfully.

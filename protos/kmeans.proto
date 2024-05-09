@@ -1,0 +1,85 @@
+syntax = "proto3";
+
+// Define KMeans service
+service KMeans {
+  // RPC method for master to run KMeans algorithm
+  rpc RunKMeans(KMeansRequest) returns (KMeansResponse) {}
+
+  // RPC method for mapper to process data
+  rpc Map(MapRequest) returns (MapResponse) {}
+
+  // RPC method for reducer to update centroid
+  rpc Reduce(ReduceRequest) returns (ReduceResponse) {}
+}
+
+service Mapper {
+  // RPC method for mapping data
+  rpc Map(MapRequest) returns (MapResponse) {}
+}
+
+// Define Reducer service
+service Reducer {
+  // RPC method for reducing data
+  rpc Reduce(ReduceRequest) returns (ReduceResponse) {}
+}
+
+// Request message for running KMeans algorithm
+message KMeansRequest {
+  // Placeholder for any request parameters if needed
+  bool temp = 1;
+}
+
+// Response message for running KMeans algorithm
+message KMeansResponse {
+  // Placeholder for any response data if needed
+  bool success = 1;
+}
+
+// Request message for mapping data
+message MapRequest {
+  // ID of the mapper
+  int32 mapper_id = 1;
+  // Data point to process
+  int32 start_index = 2;
+  int32 end_index = 3;
+  // Centroids provided by the master
+  repeated Centroid centroids = 4;
+}
+
+// Response message for mapping data
+message MapResponse {
+  // Placeholder for any response data if needed
+  bool success = 1;
+}
+
+// Request message for reducing data
+message ReduceRequest {
+  // ID of the centroid
+  int32 centroid_id = 1;
+}
+
+// Response message for reducing data
+message ReduceResponse {
+  bool success = 1;
+  // ID of the centroid
+  int32 centroid_id = 2;
+  // Updated centroid after reduction
+  repeated double updated_centroid = 3;
+}
+
+// Message representing a data point
+message DataPoint {
+  // X coordinate of the data point
+  double x = 1;
+  // Y coordinate of the data point
+  double y = 2;
+  // Add more fields if needed for higher dimensions
+}
+
+// Message representing a centroid
+message Centroid {
+  // ID of the centroid
+  int32 centroid_id = 1;
+  // Coordinates of the centroid
+  repeated double value = 2;
+}
