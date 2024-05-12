@@ -1,1 +1,1 @@
-Centroid Id: 3, Updated Centroid: No data points
+Centroid Id: 3, Updated Centroid: [0.8695652173913043, -4.304347826086956]

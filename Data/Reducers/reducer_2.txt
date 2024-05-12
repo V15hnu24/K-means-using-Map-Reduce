@@ -1,1 +1,1 @@
-Centroid Id: 2, Updated Centroid: [-0.36363636363636365, 7.545454545454546]
+Centroid Id: 2, Updated Centroid: [2013.125, -2005.4375]

@@ -67,6 +67,9 @@ class KMeansServicer(kmeans_pb2_grpc.KMeansServicer):
         with futures.ThreadPoolExecutor() as executor:
             future_to_reducer_id = {}
             for reducer_id, reducer_address in reducer_addresses.items():
+                if int(reducer_id) > self.num_centroids:
+                    break
+
                 future = executor.submit(self.update_centroid_with_reducer, reducer_id, reducer_address)
                 future_to_reducer_id[future] = reducer_id
 
@@ -90,24 +93,32 @@ class KMeansServicer(kmeans_pb2_grpc.KMeansServicer):
             print("Some reducers encountered errors.")
 
     def update_centroid_with_reducer(self, reducer_id, reducer_address):
-        # Establish gRPC connection to reducer
-        with grpc.insecure_channel(f'localhost:{reducer_address}') as channel:
-            stub = kmeans_pb2_grpc.ReducerStub(channel)
-            
-            # Allocate centroid to reducer
-            centroid_id = int(reducer_id)  # Assuming centroid ids start from 1 and match reducer ids
-            request = kmeans_pb2.ReduceRequest(centroid_id=centroid_id)
-            
-            # Send gRPC request to update centroid
-            response = stub.Reduce(request)
-            if not response.success:
-                print(f"Re-running reducer {reducer_id}")
-                time.sleep(1)
-                self.update_centroid_with_reducer(reducer_id, reducer_address)
 
-            print(f"Reducer {reducer_id}: centriod id - {response.centroid_id} Updated centroid - {response.updated_centroid}")
+        try:
+            # Establish gRPC connection to reducer
+            with grpc.insecure_channel(f'localhost:{reducer_address}') as channel:
+                stub = kmeans_pb2_grpc.ReducerStub(channel)
+                
+                # Allocate centroid to reducer
+                centroid_id = int(reducer_id)  # Assuming centroid ids start from 1 and match reducer ids
+                request = kmeans_pb2.ReduceRequest(centroid_id=centroid_id)
+                
+                # Send gRPC request to update centroid
+                response = stub.Reduce(request)
+                if not response.success:
+                    print(f"Re-running reducer {reducer_id}")
+                    time.sleep(1)
+                    self.update_centroid_with_reducer(reducer_id, reducer_address)
 
-            return response.success, response.centroid_id, response.updated_centroid
+                print(f"Reducer {reducer_id}: centriod id - {response.centroid_id} Updated centroid - {response.updated_centroid}")
+
+        except Exception as e:
+            print(f"Exception occurred while communicating with reducer {reducer_id}: {str(e)}")
+            print(f"Re-running reducer {reducer_id}")
+            time.sleep(1)
+            return self.update_centroid_with_reducer(reducer_id, reducer_address)
+
+        return response.success, response.centroid_id, response.updated_centroid
 
     def split_input_data(self):
         chunk_size = len(self.input_data) // self.num_mappers
@@ -126,27 +137,35 @@ class KMeansServicer(kmeans_pb2_grpc.KMeansServicer):
         self.chunks = chunks
 
     def send_input_to_mapper(self, mapper_id, data_chunk, mapper_address):
-        centroids = []
-        for centroid_id, value in self.centroids.items():
-            centroid_message = kmeans_pb2.Centroid()
-            centroid_message.centroid_id = centroid_id
-            centroid_message.value.extend(value)
-            centroids.append(centroid_message)
+        try:
+            centroids = []
+            for centroid_id, value in self.centroids.items():
+                centroid_message = kmeans_pb2.Centroid()
+                centroid_message.centroid_id = centroid_id
+                centroid_message.value.extend(value)
+                centroids.append(centroid_message)
 
-        print(f"Sending request to mapper {mapper_id}")
-        channel = grpc.insecure_channel(f'localhost:{mapper_address}')
-        print(f"Created channel for the mappeer {mapper_id}")
-        stub = kmeans_pb2_grpc.MapperStub(channel)
-        request = kmeans_pb2.MapRequest(mapper_id=mapper_id, start_index=data_chunk[0], end_index=data_chunk[1], centroids=centroids)
-        response = stub.Map(request)
-        channel.close()  # Close the channel after the RPC call
+            print(f"Sending request to mapper {mapper_id}")
+            channel = grpc.insecure_channel(f'localhost:{mapper_address}')
+            print(f"Created channel for the mappeer {mapper_id}")
+            stub = kmeans_pb2_grpc.MapperStub(channel)
+            request = kmeans_pb2.MapRequest(mapper_id=mapper_id, start_index=data_chunk[0], end_index=data_chunk[1], centroids=centroids)
+            response = stub.Map(request)
+            channel.close()  # Close the channel after the RPC call
 
-        print(f"{response.success} from mapper_id {mapper_id}")
+            print(f"{response.success} from mapper_id {mapper_id}")
 
-        if not response.success:
+            if not response.success:
+                print(f"Re-running mapper {mapper_id}")
+                time.sleep(1)
+                self.send_input_to_mapper(mapper_id, data_chunk, mapper_address)
+
+        except Exception as e:
+            print(f"Exception occurred while communicating with mapper {mapper_id}: {str(e)}")
             print(f"Re-running mapper {mapper_id}")
             time.sleep(1)
-            self.send_input_to_mapper(mapper_id, data_chunk, mapper_address)
+            return self.send_input_to_mapper(mapper_id, data_chunk, mapper_address)
+
         return response.success
 
     def invoke_mappers(self):
